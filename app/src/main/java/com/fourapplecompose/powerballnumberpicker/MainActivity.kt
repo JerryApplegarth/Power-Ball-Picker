@@ -16,6 +16,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.fourapplecompose.powerballnumberpicker.ui.theme.DarkGreen
 import com.fourapplecompose.powerballnumberpicker.ui.theme.TestingTheme
 
 class MainActivity : ComponentActivity() {
@@ -38,8 +39,9 @@ fun PrintNumbers() {
     Scaffold(
 
     ) {
-        TopAppBar { Text(text = "PowerBall Numbers",
+        TopAppBar { Text(text = "Power Ball Numbers",
             fontSize = 20.sp,
+
             maxLines = 1,
             modifier = Modifier.padding(8.dp)
 
@@ -59,11 +61,13 @@ fun PrintNumbers() {
     ){
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-
+            modifier = Modifier.background(Color.LightGray),
             text = "Your Lucky Numbers",
+
             fontStyle = FontStyle.Italic,
             fontFamily = FontFamily.Cursive,
             fontWeight = FontWeight.Bold,
+
             fontSize = 36.sp
 
         )
@@ -117,41 +121,47 @@ fun PrintNumbers() {
         {
 
             Text(
-                modifier = Modifier
-                    .padding(8.dp),
+                modifier = Modifier.padding(8.dp),
+                fontWeight = FontWeight.Bold,
                 text = "$myLuckyNumber1,",
                 fontSize = 24.sp,
 
                 )
             Text(
-                modifier = Modifier
-                    .padding(8.dp),
+                modifier = Modifier.padding(8.dp),
+                fontWeight = FontWeight.Bold,
                 text = "$myLuckyNumber2,",
                 fontSize = 24.sp,
 
                 )
             Text(
                 text = myLuckyNumber3.toString(),
+                fontWeight = FontWeight.Bold,
                 fontSize = 24.sp,
                 modifier = Modifier.padding(8.dp),
             )
 
             Text(
                 text = myLuckyNumber4.toString(),
+                fontWeight = FontWeight.Bold,
                 fontSize = 24.sp,
                 modifier = Modifier.padding(8.dp),
             )
 
             Text(
                 text = myLuckyNumber5.toString(),
+                fontWeight = FontWeight.Bold,
                 fontSize = 24.sp,
                 modifier = Modifier.padding(8.dp),
 
                 )
             Text(
                 text = myPowerBall.toString(),
+                fontWeight = FontWeight.Bold,
                 fontSize = 24.sp,
+
                 color = Color.Red,
+
                 modifier = Modifier.padding(8.dp),
             )
         }
