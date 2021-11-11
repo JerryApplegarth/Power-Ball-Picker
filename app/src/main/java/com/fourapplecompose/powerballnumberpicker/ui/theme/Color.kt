@@ -14,12 +14,6 @@ val Teal200 = Color(0xFF03DAC5)
 val LightGreen = Color(0xFFdcdec8)
 val DarkGreen = Color(0xFF558b2f)
 
-val RedOrange = Color(0xffffab91)
-val RedPink = Color(0xfff48fb1)
-val BabyBlue = Color(0xff81deea)
-val Violet = Color(0xffcf94da)
-
-
 
 val LightYellow = Color(0xfffffde7)
 
@@ -27,10 +21,6 @@ val LightGray = Color(0xfffcfcfc)
 val MediumGray = Color(0xff9c9c9c)
 val DarkGray = Color(0xff141414)
 
-val LowPriorityColor = Color(0xFF00c980)
-val MediumPriorityColor = Color(0xFFffc114)
-val HighPriorityColor = Color(0xFFff4646)
-val NonePriorityColor = MediumGray
 
 val Green200 = Color(0xffcfff95)
 val Green500 = Color(0xff9ccc65)
