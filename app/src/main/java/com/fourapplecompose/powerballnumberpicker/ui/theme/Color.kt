@@ -49,13 +49,13 @@ val Colors.newBackgroundColor: Color
     get() = if (isLight) LightGreen else DarkGreen700
 
 
-val Colors.taskItemTextColor: Color
+val Colors.textItemTextColor: Color
     @Composable
-    get() = if (isLight) FullBlack else DarkGreen500
+    get() = if (isLight) DarkGreen700 else Green500
 
-val Colors.taskItemBackgroundColor: Color
+val Colors.topAppBackgroundColor: Color
     @Composable
-    get() = if (isLight) Color.White else DarkGray
+    get() = if (isLight) DarkGreen700 else DarkGray
 
 val Colors.fabBackgroundColor: Color
     @Composable

@@ -10,43 +10,52 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.fourapplecompose.powerballnumberpicker.ui.theme.DarkGreen
-import com.fourapplecompose.powerballnumberpicker.ui.theme.TestingTheme
-import com.fourapplecompose.powerballnumberpicker.ui.theme.newBackgroundColor
+import com.fourapplecompose.powerballnumberpicker.ui.theme.*
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            TestingTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(color = MaterialTheme.colors.newBackgroundColor) {
-                    PrintNumbers()
+            Surface(color = MaterialTheme.colors.newBackgroundColor) {
+                PrintNumbers()
 
                 }
             }
         }
     }
-}
+
 
 @Composable
 fun PrintNumbers() {
     Scaffold(
 
     ) {
-        TopAppBar {
+        Surface(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(MaterialTheme.colors.topAppBackgroundColor)
+        ) {
+
+        }
+        TopAppBar (
+            modifier = Modifier
+                .fillMaxWidth()
+
+                ){
+
             Text(
                 text = "Power Ball Numbers",
+                style = MaterialTheme.typography.h4,
+                color = Color.Black,
                 fontSize = 20.sp,
-
                 maxLines = 1,
-                modifier = Modifier.padding(8.dp)
             )
         }
     }
@@ -60,22 +69,20 @@ fun PrintNumbers() {
         Spacer(modifier = Modifier.height(16.dp))
         Text(
 
-            text = "Your Lucky Numbers",
+            text = stringResource(id = R.string.title),
             fontStyle = FontStyle.Italic,
             fontFamily = FontFamily.Cursive,
             fontWeight = FontWeight.Bold,
-            fontSize = 36.sp
+            fontSize = 36.sp,
+            color = MaterialTheme.colors.textItemTextColor
         )
         Text(
             modifier = Modifier.padding(16.dp),
-            text = "Everytime you open this app, " +
-                    "you will be shown your next lucky Power Ball number.\n" +
-                    "You will not win every time but " +
-                    "it's a new way to play-Let the app pick your numbers.",
+            text = stringResource(R.string.body_text),
             fontSize = 16.sp
         )
         Text(
-            text = "GoodLuck!!!",
+            text = stringResource(id = R.string.good_luck),
             modifier = Modifier.padding(16.dp),
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
@@ -138,7 +145,7 @@ fun PrintNumbers() {
                 text = myPowerBall.toString(),
                 fontWeight = FontWeight.Bold,
                 fontSize = 24.sp,
-                color = Color.Red,
+                color = MaterialTheme.colors.textItemTextColor,
                 modifier = Modifier.padding(8.dp),
             )
         }

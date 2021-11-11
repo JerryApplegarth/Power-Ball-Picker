@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PowerBall Number Picker</string>
+
+    <string name="body_text">"Everytime you open this app, you will be shown your next lucky Power Ball numbers.
+You will not win every time but it's a new way to play-Let the app pick your numbers.",</string>
+    <string name="title">Your Lucky Numbers</string>
+    <string name="good_luck">Good Luck!</string>
+
 </resources>
