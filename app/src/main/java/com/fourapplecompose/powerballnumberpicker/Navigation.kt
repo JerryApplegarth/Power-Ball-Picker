@@ -11,22 +11,19 @@ fun SetUpNavigation(
 
 ) {
 
-
     NavHost(
         navController = navController,
         startDestination = Screen.HomeScreen.route
-    ){
+    ) {
         composable(
             route = Screen.HomeScreen.route
-        ){
+        ) {
             HomeScreen(navController = navController)
         }
         composable(
             route = Screen.PrintNumbers.route
-        ){
+        ) {
             PrintNumbers(navController = navController)
         }
-
-
     }
 }

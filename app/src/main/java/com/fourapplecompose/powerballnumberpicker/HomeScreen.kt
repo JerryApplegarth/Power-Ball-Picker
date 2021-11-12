@@ -19,10 +19,6 @@ import com.fourapplecompose.powerballnumberpicker.ui.theme.textItemTextColor
 @Composable
 fun HomeScreen(navController: NavController) {
 
-
-
-
-
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -31,18 +27,11 @@ fun HomeScreen(navController: NavController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
 
-
     ) {
-
-
-
 
         Text(
             modifier = Modifier
                 .padding(start = 8.dp),
-
-
-
             text = stringResource(id = R.string.home_page_text),
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
@@ -50,24 +39,16 @@ fun HomeScreen(navController: NavController) {
         )
         Spacer(modifier = Modifier.height(36.dp))
         Text(
-
             modifier = Modifier
                 .padding(start = 8.dp)
                 .clickable {
                     navController.navigate(route = Screen.PrintNumbers.route)
-
                 },
 
             text = stringResource(id = R.string.click),
             fontSize = 16.sp,
             fontWeight = FontWeight.Bold
-
-            )
-
-
+        )
     }
-
-
-
 }
 

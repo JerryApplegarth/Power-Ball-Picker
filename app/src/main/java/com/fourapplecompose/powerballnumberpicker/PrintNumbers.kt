@@ -25,11 +25,7 @@ fun PrintNumbers(
     navController: NavController
 ) {
 
-
-
-
-
-     Column(
+    Column(
         modifier = Modifier
             .fillMaxSize()
             .background(MaterialTheme.colors.newBackgroundColor),
