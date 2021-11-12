@@ -32,6 +32,8 @@ class MainActivity : ComponentActivity() {
                 MaterialTheme.colors.newBackgroundColor
 
 
+
+
                 navController = rememberNavController()
                 SetUpNavigation(navController = navController)
 

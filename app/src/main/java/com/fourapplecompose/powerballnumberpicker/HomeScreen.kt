@@ -4,7 +4,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -21,6 +20,9 @@ import com.fourapplecompose.powerballnumberpicker.ui.theme.textItemTextColor
 fun HomeScreen(navController: NavController) {
 
 
+
+
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -31,6 +33,10 @@ fun HomeScreen(navController: NavController) {
 
 
     ) {
+
+
+
+
         Text(
             modifier = Modifier
                 .padding(start = 8.dp),
@@ -52,10 +58,15 @@ fun HomeScreen(navController: NavController) {
 
                 },
 
-            text = stringResource(id = R.string.click))
+            text = stringResource(id = R.string.click),
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Bold
+
+            )
 
 
     }
+
 
 
 }
