@@ -36,5 +36,9 @@ val Colors.textItemTextColor: Color
     @Composable
     get() = if (isLight) DarkGreen700 else Green500
 
+val Colors.topAppBarBackground: Color
+    @Composable
+    get() = if (isLight) Green700 else DarkGreen700
+
 
 
